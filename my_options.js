@@ -20,7 +20,7 @@ export const myOptions = {
     checks: ['rate>0.8'], // tất cả các check phải thành công hơn 80%
     'http_req_duration{scenario:scenario_run_parallel}': ['p(95)<300'],
     'http_req_duration{scenario:my_api_test_2}': ['p(95)<280'],
-    'http_req_sending': ['avg < 0.5'],  // cái này là cho cả 3 kịch bản luôn
+    'http_req_sending': ['avg < 0.4'],  // cái này là cho cả 3 kịch bản luôn
   },
   scenarios: {
   scenario_run_parallel  : {
