@@ -12,8 +12,8 @@ pipeline {
                 echo 'Running K6 performance tests...'
                 sh 'sudo chmod +x setup_k6.sh'
                 sh 'sudo ./setup_k6.sh'
-                sh 'k6 login cloud --token ${K6_API_TOKEN}'
-                sh 'k6 cloud main_test.js'
+                #sh 'k6 login cloud --token ${K6_API_TOKEN}'
+                sh 'k6 run main_test.js'
                 echo 'Completed Running K6 performance tests!'
             }
         }
