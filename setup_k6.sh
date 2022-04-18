@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex
 
+echo "whoami"
+
 echo "Beginnnn!!!"
 sudo apt-get update
 sudo apt-get install dirmngr --install-recommends
