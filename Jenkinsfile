@@ -20,7 +20,7 @@ pipeline {
     }
     post {
         always {
-            perfReport 'result.csv'
+            perfReport '/var/lib/jenkins/workspace/K6_Pipeline/result.csv'
     }
   }
 }
