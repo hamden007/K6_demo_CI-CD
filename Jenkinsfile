@@ -20,7 +20,7 @@ pipeline {
     }
     post {
         always {
-            perfReport filterRegex: '', sourceDataFiles: 'var/lib/jenkins/workspace/K6_Pipeline/result.csv'
+            perfReport filterRegex: '', sourceDataFiles: 'result.csv'
     }
   }
 }
