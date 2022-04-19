@@ -8,12 +8,12 @@ export const myOptions = {
   thresholds: {
     'http_req_duration{test_type:testYoutube}': [ // nó đang dựa vào tags để gắn vào
     {	
-      threshold: 'p(90)<280', // 90% yêu cầu được phản hồi dưới 280ms	
+      threshold: 'p(90)<980', // 90% yêu cầu được phản hồi dưới 280ms	
       abortOnFail: false, //có hủy bỏ thử nghiệm hay không
       delayAbortEval: '10s', //đặt thời gian để trì hoãn đánh giá ngưỡng để có thể thực thi các công việc khác
     },
     {
-      threshold: 'p(95)<285', // 95% yêu cầu được phản hồi dưới 285ms	
+      threshold: 'p(95)<985', // 95% yêu cầu được phản hồi dưới 285ms	
       abortOnFail: false, //có hủy bỏ thử nghiệm hay không
       delayAbortEval: '10s', //đặt thời gian để trì hoãn đánh giá ngưỡng để có thể thực thi các công việc khác
     }],
