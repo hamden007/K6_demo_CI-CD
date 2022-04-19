@@ -20,7 +20,7 @@ pipeline {
     }
     post {
         always {
-            perfReport filterRegex: '', relativeFailedThresholdNegative: 1.2, relativeFailedThresholdPositive: 1.89, relativeUnstableThresholdNegative: 1.8, relativeUnstableThresholdPositive: 1.5, sourceDataFiles: '*results.csv'
+            perfReport filterRegex: '', sourceDataFiles: 'var/lib/jenkins/workspace/K6_Pipeline/result.csv'
     }
   }
 }
