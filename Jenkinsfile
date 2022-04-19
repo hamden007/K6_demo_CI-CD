@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Performance Testing') {
             steps {
-                sh "whoami"
+                sh "pwd"
                 echo 'Running K6 performance tests...'
                 sh 'sudo chmod +x setup_k6.sh'
                 sh 'sudo ./setup_k6.sh'
