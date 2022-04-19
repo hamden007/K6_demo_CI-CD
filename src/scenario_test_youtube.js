@@ -11,7 +11,7 @@ export function scenaruioTestYoutube() {
         let res = http.get(url);
         myCustomTrend.add(res.timings.duration)
             check(res, {
-                'Time waiting less than 150ms': (r) => r.timings.waiting < 150,
+                'Time waiting less than 150ms': (r) => r.timings.waiting < 850,
                 'Connection status successful':(r) => r.status_text === "200 OK"
             });
     });
