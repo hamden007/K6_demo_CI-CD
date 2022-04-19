@@ -19,7 +19,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 k6 run --out cloud main_test.js
 ```
 
-Because I don't have a license for the cloud, I can't run it on the cloud yet
+Because I don't have a license for the cloud, I can only run on the cloud as trial account with limitation of 50 VUs.
 
 
 ## Run and out debug.
