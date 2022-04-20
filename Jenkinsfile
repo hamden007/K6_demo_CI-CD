@@ -14,14 +14,15 @@ pipeline {
                 sh 'sudo ./setup_k6.sh'
                 //sh 'k6 login cloud --token ${K6_API_TOKEN}'
                 // sh 'k6 run --out json=result.json main_test.js'
-                sh 'k6 run main_test.js | k6-to-junit junit.xml'          
+                sh 'k6 run main_test.js | k6-to-junit junit1.xml'          
                 echo 'Completed Running K6 performance tests!'
             }
         }
     }
     post {
         always {
-            perfReport 'junit.xml'
+            // perfReport filterRegex: '', sourceDataFiles: 'junit1.xml'
+            junit 'junit1.xml'
     }
   }
 }
