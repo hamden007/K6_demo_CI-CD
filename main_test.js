@@ -15,6 +15,23 @@ import { scenaruioTestYoutube } from './src/scenario_test_youtube.js';
 
 export let options = myOptions;
 
+// const { spawn } = require("child_process");
+// const { createWriteStream } = require("fs");
+// const { K6Parser } = require("k6-to-junit");
+
+// const parser = new K6Parser();
+// const test = spawn("k6", ["run", "test.js"]);
+
+// parser.pipeFrom(test.stdout).then(() => {
+//   const writer = createWriteStream("junit.xml");
+//   parser.toXml(writer);
+//   writer.once("finished", () => {
+//     process.exit(parser.allPassed() ? 0 : 99);
+//   });
+// });
+
+
+
 
 export function funcScenarioRunParallel() {
     scenarioRunParallel()
