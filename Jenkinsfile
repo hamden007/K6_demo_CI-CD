@@ -19,9 +19,9 @@ pipeline {
             }
         }
     }
-    // post {
-    //     always {
-    //         perfReport filterRegex: '', sourceDataFiles: 'result.json'
-    // }
+    post {
+        always {
+            perfReport filterRegex: '', sourceDataFiles: 'junit.xml'
+    }
   }
 }
