@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            perfReport filterRegex: '', sourceDataFiles: 'junit.xml'
+            perfReport 'junit.xml'
     }
   }
 }
